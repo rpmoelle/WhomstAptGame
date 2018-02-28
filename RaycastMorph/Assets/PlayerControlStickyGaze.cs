@@ -207,7 +207,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                     case 1:
                         {
                             //find cute and smart
-                            if (checkMatchingTags("cute", "smart"))
+                            if (checkMatchingTags("clean", "dirty"))
                             {
                                 //success
                                 Debug.Log("YOU COMBINED CORRECTLY");
@@ -218,7 +218,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 Vector3 pos = MyObjects[0].transform.position;//standardize this to be a uniform location infront of camera
                                 GameObject temp = Instantiate(TEMPNEWOBJ, transform.position + (transform.forward * 2), transform.rotation);//move this to infront of camera
                                 //MyObjects[0].GetComponent<myInfo>().label = "Puppy That Knows 17 Digits of Pi";
-                                temp.name = "SmartPuppy";
+                                temp.name = "Clean and dirty item.";
                                 temp.GetComponent<myInfo>().sallyObject = true;
                                 detachItems();
                                 cleanCam();
@@ -244,7 +244,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                         {
                             Debug.Log("ENTERING CASE 2");
                             //find cute and smart
-                            if (checkMatchingTags("breakfast", "bed"))
+                            if (checkMatchingTags("tasty", "explosive"))
                             {
                                 //success
                                 Debug.Log("YOU COMBINED CORRECTLY");
@@ -253,8 +253,8 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 //Remove old objects for new one
                                 Vector3 pos = MyObjects[0].transform.position;
                                 GameObject temp = Instantiate(TEMPNEWOBJ, transform.position + (transform.forward * 2), transform.rotation);//move this to infront of camera
-                                temp.GetComponent<myInfo>().label = "Breakfast in Bed";
-                                temp.name = "BreakfastInBed";
+                                temp.GetComponent<myInfo>().label = "Tasty Explosive Food";
+                                temp.name = "TasyExplosiveFood";
                                 temp.GetComponent<myInfo>().sallyObject = false;
 
                                 detachItems();
@@ -279,7 +279,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                     case 3:
                         {
                             //find cute and smart
-                            if (checkMatchingTags("paper", "sharp"))
+                            if (checkMatchingTags("ball", "gown"))
                             {
                                 //success
                                 Debug.Log("YOU COMBINED CORRECTLY");
@@ -288,8 +288,8 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 //Remove old objects for new one
                                 Vector3 pos = MyObjects[0].transform.position;
                                 GameObject temp = Instantiate(TEMPNEWOBJ, transform.position + (transform.forward * 2), transform.rotation);//move this to infront of camera
-                                temp.GetComponent<myInfo>().label = "Confetti";
-                                temp.name = "Confetti";
+                                temp.GetComponent<myInfo>().label = "Ball Gown";
+                                temp.name = "BallGown";
                                 temp.GetComponent<myInfo>().sallyObject = true;
 
                                 detachItems();
@@ -350,17 +350,17 @@ public class PlayerControlStickyGaze : MonoBehaviour
         {
             case 1:
                 {
-                    return "Task: Sally - Bring me something cute and intelligent.";
+                    return "ITEM REQUEST: Sally - My honey, the executive, is coming over. Bring me something dirty to get me in the mood, but also clean to keep it classy.";
                     break;
                 }
             case 2:
                 {
-                    return "Task: Bob - Make me breakfast in bed.";
+                    return "MAKE REQUEST: Bob - About to live tweet the fireworks show! Make me something tasty and explosive to eat during the show.";
                     break;
                 }
             case 3:
                 {
-                    return "Task: Sally - Congratulate me on that new promotion by throwing a confetti party.";
+                    return "COMFORT REQUEST: Petunia - Meet me in the home theatre to watch my student film. I got a B- sooooooo.";
                     break;
                 }
         }
