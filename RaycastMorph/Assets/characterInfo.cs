@@ -10,12 +10,10 @@ public class characterInfo : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
     
-        Debug.Log("FUCK");
+        
         if(collision.gameObject.tag == "COMBO")
         {
-            //check if this is the right person
-            if (collision.gameObject.GetComponent<myInfo>().sallyObject)
-            {
+           
                 //if this is a sally object
                 if (isSally)
                 {
@@ -34,9 +32,8 @@ public class characterInfo : MonoBehaviour {
                     playerScript.gameObject.GetComponent<AudioSource>().Play();
                 }
 
-            }
-            else if(!collision.gameObject.GetComponent<myInfo>().sallyObject)
-            {
+            
+           
                 //if this is not a sally object
                 if (!isSally)
                 {
@@ -59,7 +56,7 @@ public class characterInfo : MonoBehaviour {
                     
                 }
 
-            }
+            
 
         }
         else

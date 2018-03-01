@@ -6566,7 +6566,7 @@ GameObject:
   - component: {fileID: 445411174}
   m_Layer: 0
   m_Name: Master's Degree
-  m_TagString: smart
+  m_TagString: dirty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14435,7 +14435,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'ITEM REQUEST: Sally - My honey, the executive, is coming over. Bring me
-    something dirty to get me in the mood, but also clean to keep it classy.'
+    something DIRTY to get me in the mood, but also CLEAN to keep it classy.'
 --- !u!222 &730179172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18255,7 +18255,7 @@ GameObject:
   - component: {fileID: 1085911509}
   m_Layer: 0
   m_Name: Puppy
-  m_TagString: cute
+  m_TagString: clean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
