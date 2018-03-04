@@ -85,6 +85,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
             if (hit.collider != null && hit.collider != floor && hit.collider.gameObject != cam && Input.GetKeyDown(KeyCode.LeftShift))
             {
                 hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 hit.collider.transform.parent = cam.transform;
                 MyObjects.Add(hit.collider.gameObject);
                 if (hit.collider.GetComponent<myInfo>() != null)
@@ -439,6 +440,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
             {
 
                 i.gameObject.GetComponent<myInfo>().grabbed = false;
+                i.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                i.gameObject.GetComponent<Rigidbody>().useGravity = true;
+           
             }
             //Vector3 force = 7f * Time.deltaTime * transform.forward;
             //i.AddForce(force);
