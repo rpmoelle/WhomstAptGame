@@ -889,10 +889,11 @@ MonoBehaviour:
   evil: {fileID: 0}
   good: {fileID: 0}
   taskDisplay: {fileID: 730179171}
-  TEMPNEWOBJ: {fileID: 1598761815054270, guid: 15adfd8a3d443d34eb14bf94e2f1989b, type: 2}
+  TEMPNEWOBJ: {fileID: 1318815152636138, guid: fbaa12f984fa34f469fe5d18a5d8f0a0, type: 2}
   WorldLabel: {fileID: 384355104}
   inSallysRoom: 0
   task: {fileID: 0}
+  currentRequestor: 
 --- !u!114 &41789932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3048,7 @@ MonoBehaviour:
   WorldLabel: {fileID: 0}
   inSallysRoom: 0
   task: {fileID: 0}
+  currentRequestor: 
 --- !u!1001 &210415685
 Prefab:
   m_ObjectHideFlags: 0

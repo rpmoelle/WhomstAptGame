@@ -27,6 +27,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
     public Text WorldLabel;
     public bool inSallysRoom;
     public Text task;
+    public string currentRequestor;
 
     //Public Tasks
     int taskNum = 1;
@@ -34,7 +35,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        currentRequestor = "Sally";
     }
 
     // Update is called once per frame
@@ -223,7 +224,12 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 temp.GetComponent<myInfo>().sallyObject = true;
                                 detachItems();
                                 cleanCam();
-                                Debug.Log(MyObjects.Count);
+                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().isKinematic = false;
+                            temp.GetComponent<Rigidbody>().freezeRotation = true;
+                            temp.GetComponent<Rigidbody>().angularDrag = 0f;
+                            temp.GetComponent<Rigidbody>().mass = 1f;
+                            Debug.Log(MyObjects.Count);
                                 /*foreach (GameObject go in MyObjects)
                                 {
                                     Destroy(go);
@@ -343,6 +349,25 @@ public class PlayerControlStickyGaze : MonoBehaviour
         //sets up next task
         taskNum++;
         taskDisplay.text = getTaskText();
+        //assign the requestor character:
+        switch (taskNum)
+        {
+            case 1:
+                {
+                    currentRequestor = "Sally";
+                    break;
+                }
+            case 2:
+                {
+                    currentRequestor = "Bob";
+                    break;
+                }
+            case 3:
+                {
+                    currentRequestor = "Petunia";
+                    break;
+                }
+        }
     }
 
     string getTaskText()
@@ -351,12 +376,12 @@ public class PlayerControlStickyGaze : MonoBehaviour
         {
             case 1:
                 {
-                    return "ITEM REQUEST: Sally - My honey, the executive, is coming over. Bring me something DIRTY to get me in the mood, but also CLEAN to keep it classy.";
+                    return "ITEM REQUEST: Sally - My honey, the executive, is coming over. BRING me something DIRTY to get me in the mood, but also CLEAN to keep it classy.";
                     break;
                 }
             case 2:
                 {
-                    return "MAKE REQUEST: Bob - About to live tweet the fireworks show! Make me something TASTY and EXPLOSIVE to eat during the show.";
+                    return "MAKE REQUEST: Bob - About to live tweet the fireworks show! MAKE me something TASTY and EXPLOSIVE to eat during the show.";
                     break;
                 }
             case 3:

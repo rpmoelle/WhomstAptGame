@@ -9,13 +9,14 @@ public class characterInfo : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-    
+        //get the task requester:
+        string requestor = playerScript.currentRequestor;
         
         if(collision.gameObject.tag == "COMBO")
         {
            
                 //if this is a sally object
-                if (isSally)
+                if (this.gameObject.name == requestor)
                 {
                     //correctly gave to right person.
                     Debug.Log("Got here.");
@@ -34,7 +35,7 @@ public class characterInfo : MonoBehaviour {
 
             
            
-                //if this is not a sally object
+               /* //if this is not a sally object
                 if (!isSally)
                 {
                     //correctly gave to right person (Bob).
@@ -45,7 +46,7 @@ public class characterInfo : MonoBehaviour {
                     playerScript.cleanCam();
                    // Destroy(collision.gameObject);
                     playerScript.nextTask();
-                }
+                }*/
                 else
                 {
                     //wrong person!
