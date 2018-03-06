@@ -28,13 +28,16 @@ public class PlayerControlStickyGaze : MonoBehaviour
     public bool inSallysRoom;
     public Text task;
 
+    List<myInfo> AllObjsWithInfo = new List<myInfo>();
+
     //Public Tasks
     int taskNum = 1;
 
     // Use this for initialization
     void Start()
     {
-
+        GetComponents<myInfo>(AllObjsWithInfo);
+        Debug.Log(AllObjsWithInfo[0].gameObject.name);
     }
 
     // Update is called once per frame
@@ -117,7 +120,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                     hit.collider.gameObject.GetComponent<myInfo>().watched = true;
                     if (hit.collider.gameObject.GetComponent<myInfo>().label != null)
                     {
-                        Debug.Log("WOOO");
+                        //Debug.Log("WOOO");
                         //WorldLabel.enabled = true;
                         if (hit.collider.gameObject.GetComponent<myInfo>().wrongCombine) {
                             WorldLabel.enabled = true;
@@ -475,14 +478,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "reset") {
             Debug.Log("this worked");
-            List<myInfo> AllObjs = new List<myInfo>();
-            for (int i = 0; i < FindObjectsOfType<myInfo>().Length; i++) {
-                AllObjs[i] = FindObjectsOfType<myInfo>()[i];
-            }
             
-            for (int i = 0; i < AllObjs.Count; i++) {
-                //MyObjects[i].GetComponent<Transform>().position = MyObjects[i].GetComponent<myInfo>().startPos;
-                AllObjs[i].gameObject.GetComponent<Transform>().position = AllObjs[i].startPos;
+            for (int i = 0; i < AllObjsWithInfo.Count; i++) {
+                AllObjsWithInfo[i].gameObject.transform.position = AllObjsWithInfo[i].startPos;
             }
         }
     }
