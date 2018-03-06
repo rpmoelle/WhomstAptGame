@@ -889,10 +889,11 @@ MonoBehaviour:
   evil: {fileID: 0}
   good: {fileID: 0}
   taskDisplay: {fileID: 730179171}
-  TEMPNEWOBJ: {fileID: 1598761815054270, guid: 15adfd8a3d443d34eb14bf94e2f1989b, type: 2}
+  TEMPNEWOBJ: {fileID: 1318815152636138, guid: fbaa12f984fa34f469fe5d18a5d8f0a0, type: 2}
   WorldLabel: {fileID: 384355104}
   inSallysRoom: 0
   task: {fileID: 0}
+  currentRequestor: 
 --- !u!114 &41789932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3416,6 +3417,7 @@ MonoBehaviour:
   WorldLabel: {fileID: 0}
   inSallysRoom: 0
   task: {fileID: 0}
+  currentRequestor: 
 --- !u!1001 &210415685
 Prefab:
   m_ObjectHideFlags: 0
@@ -7204,7 +7206,7 @@ GameObject:
   - component: {fileID: 445411174}
   m_Layer: 0
   m_Name: Master's Degree
-  m_TagString: smart
+  m_TagString: dirty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15439,7 +15441,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'ITEM REQUEST: Sally - My honey, the executive, is coming over. Bring me
-    something dirty to get me in the mood, but also clean to keep it classy.'
+    something DIRTY to get me in the mood, but also CLEAN to keep it classy.'
 --- !u!222 &730179172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20748,7 +20750,7 @@ GameObject:
   - component: {fileID: 1085911509}
   m_Layer: 0
   m_Name: Puppy
-  m_TagString: cute
+  m_TagString: clean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20826,13 +20828,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1085911503}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0001
   m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1085911509
 MonoBehaviour:

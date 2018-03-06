@@ -27,6 +27,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
     public Text WorldLabel;
     public bool inSallysRoom;
     public Text task;
+    public string currentRequestor;
 
     //Public Tasks
     int taskNum = 1;
@@ -34,7 +35,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        currentRequestor = "Sally";
     }
 
     // Update is called once per frame
@@ -85,6 +86,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
             if (hit.collider != null && hit.collider != floor && hit.collider.gameObject != cam && Input.GetKeyDown(KeyCode.LeftShift))
             {
                 hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 hit.collider.transform.parent = cam.transform;
                 MyObjects.Add(hit.collider.gameObject);
                 if (hit.collider.GetComponent<myInfo>() != null)
@@ -222,7 +224,12 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 temp.GetComponent<myInfo>().sallyObject = true;
                                 detachItems();
                                 cleanCam();
-                                Debug.Log(MyObjects.Count);
+                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().isKinematic = false;
+                            temp.GetComponent<Rigidbody>().freezeRotation = true;
+                            temp.GetComponent<Rigidbody>().angularDrag = 0f;
+                            temp.GetComponent<Rigidbody>().mass = 1f;
+                            Debug.Log(MyObjects.Count);
                                 /*foreach (GameObject go in MyObjects)
                                 {
                                     Destroy(go);
@@ -279,7 +286,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                     case 3:
                         {
                             //find cute and smart
-                            if (checkMatchingTags("ball", "gown"))
+                            if (checkMatchingTags("comedic", "dramatic"))
                             {
                                 //success
                                 Debug.Log("YOU COMBINED CORRECTLY");
@@ -288,8 +295,8 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 //Remove old objects for new one
                                 Vector3 pos = MyObjects[0].transform.position;
                                 GameObject temp = Instantiate(TEMPNEWOBJ, transform.position + (transform.forward * 2), transform.rotation);//move this to infront of camera
-                                temp.GetComponent<myInfo>().label = "Ball Gown";
-                                temp.name = "BallGown";
+                                temp.GetComponent<myInfo>().label = "Better Film";
+                                temp.name = "BetterFilm";
                                 temp.GetComponent<myInfo>().sallyObject = true;
 
                                 detachItems();
@@ -342,6 +349,25 @@ public class PlayerControlStickyGaze : MonoBehaviour
         //sets up next task
         taskNum++;
         taskDisplay.text = getTaskText();
+        //assign the requestor character:
+        switch (taskNum)
+        {
+            case 1:
+                {
+                    currentRequestor = "Sally";
+                    break;
+                }
+            case 2:
+                {
+                    currentRequestor = "Bob";
+                    break;
+                }
+            case 3:
+                {
+                    currentRequestor = "Petunia";
+                    break;
+                }
+        }
     }
 
     string getTaskText()
@@ -350,17 +376,17 @@ public class PlayerControlStickyGaze : MonoBehaviour
         {
             case 1:
                 {
-                    return "ITEM REQUEST: Sally - My honey, the executive, is coming over. Bring me something dirty to get me in the mood, but also clean to keep it classy.";
+                    return "ITEM REQUEST: Sally - My honey, the executive, is coming over. BRING me something DIRTY to get me in the mood, but also CLEAN to keep it classy.";
                     break;
                 }
             case 2:
                 {
-                    return "MAKE REQUEST: Bob - About to live tweet the fireworks show! Make me something tasty and explosive to eat during the show.";
+                    return "MAKE REQUEST: Bob - About to live tweet the fireworks show! MAKE me something TASTY and EXPLOSIVE to eat during the show.";
                     break;
                 }
             case 3:
                 {
-                    return "COMFORT REQUEST: Petunia - Meet me in the home theatre to watch my student film. I got a B- sooooooo.";
+                    return "COMFORT REQUEST: Petunia - I'm locked in the theatre watching a terrible film! Bring me a COMEDIC and DRAMATIC film that's better!";
                     break;
                 }
         }
@@ -384,8 +410,6 @@ public class PlayerControlStickyGaze : MonoBehaviour
         bool got1 = false;
         bool got2 = false;
         //check if one object is from each side
-        bool gotSally = false;
-        bool gotBob = false;
         Debug.Log("ITS ME" + MyObjects.Count);
         foreach (GameObject g in MyObjects)
         {
@@ -398,14 +422,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                 {
                     got1 = true;
                     Debug.Log("My tag is xxxxxx " + g.tag);
-                    if (g.GetComponent<myInfo>().sallyObject)
-                    {
-                        gotSally = true;
-                    }
-                    else
-                    {
-                        gotBob = true;
-                    }
+                    
                 }
                 else
                 {
@@ -417,14 +434,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
                 if (g.tag == key2)
                 {
                     got2 = true;
-                    if (g.GetComponent<myInfo>().sallyObject)
-                    {
-                        gotSally = true;
-                    }
-                    else
-                    {
-                        gotBob = true;
-                    }
+                   
                 }
                 else
                 {
@@ -434,8 +444,8 @@ public class PlayerControlStickyGaze : MonoBehaviour
         }
         if(got1 && got2)
         {
-            if (gotBob && gotSally) return true;
-            else return false;
+          return true;
+           
         }
         else
         {
@@ -455,6 +465,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
             {
 
                 i.gameObject.GetComponent<myInfo>().grabbed = false;
+                i.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                i.gameObject.GetComponent<Rigidbody>().useGravity = true;
+           
             }
             //Vector3 force = 7f * Time.deltaTime * transform.forward;
             //i.AddForce(force);

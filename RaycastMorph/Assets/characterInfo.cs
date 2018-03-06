@@ -9,15 +9,14 @@ public class characterInfo : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-    
-        Debug.Log("FUCK");
+        //get the task requester:
+        string requestor = playerScript.currentRequestor;
+        
         if(collision.gameObject.tag == "COMBO")
         {
-            //check if this is the right person
-            if (collision.gameObject.GetComponent<myInfo>().sallyObject)
-            {
+           
                 //if this is a sally object
-                if (isSally)
+                if (this.gameObject.name == requestor)
                 {
                     //correctly gave to right person.
                     Debug.Log("Got here.");
@@ -34,10 +33,9 @@ public class characterInfo : MonoBehaviour {
                     playerScript.gameObject.GetComponent<AudioSource>().Play();
                 }
 
-            }
-            else if(!collision.gameObject.GetComponent<myInfo>().sallyObject)
-            {
-                //if this is not a sally object
+            
+           
+               /* //if this is not a sally object
                 if (!isSally)
                 {
                     //correctly gave to right person (Bob).
@@ -48,7 +46,7 @@ public class characterInfo : MonoBehaviour {
                     playerScript.cleanCam();
                    // Destroy(collision.gameObject);
                     playerScript.nextTask();
-                }
+                }*/
                 else
                 {
                     //wrong person!
@@ -59,7 +57,7 @@ public class characterInfo : MonoBehaviour {
                     
                 }
 
-            }
+            
 
         }
         else

@@ -17,12 +17,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1680
     height: 876
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
   controlID: 65
+=======
+    width: 1904
+    height: 971
+  m_MinSize: {x: 613, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
+  vertical: 1
+  controlID: 2700
+>>>>>>> ObjectGravity
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,12 +128,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1680
     height: 876
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
   controlID: 66
+=======
+    width: 1904
+    height: 971
+  m_MinSize: {x: 613, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
+  vertical: 0
+  controlID: 2701
+>>>>>>> ObjectGravity
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,10 +159,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 144
     height: 876
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 200
+    height: 971
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> ObjectGravity
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -179,9 +204,15 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f010feff
     m_LastClickedID: -126736
     m_ExpandedIDs: 02f9ffff96fbffff00000000e22f00002032000018370000
+=======
+    m_SelectedIDs: 7c2e0000
+    m_LastClickedID: 11900
+    m_ExpandedIDs: 9efbffff000000007c2e0000be300000
+>>>>>>> ObjectGravity
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 'Skull '
@@ -222,12 +253,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 144
     y: 0
+<<<<<<< HEAD
     width: 1259
     height: 876
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
   controlID: 67
+=======
+    width: 1427
+    height: 971
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
+  vertical: 1
+  controlID: 2662
+>>>>>>> ObjectGravity
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,6 +322,59 @@ MonoBehaviour:
     width: 885
     height: 384
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+=======
+  m_SceneLighting: 1
+  lastFramingTime: 1319.238386452613
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: -0.08615041, y: 0.90583515, z: -6.811282}
+    speed: 2
+    m_Value: {x: -0.08615041, y: 0.90583515, z: -6.811282}
+  m_RenderMode: 0
+  m_ValidateTrueMetals: 0
+  m_SceneViewState:
+    showFog: 1
+    showMaterialUpdate: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+  grid:
+    xGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    yGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+  m_Rotation:
+    m_Target: {x: 0.05485201, y: 0.38174102, z: -0.022701409, w: 0.92236453}
+    speed: 2
+    m_Value: {x: 0.054851826, y: 0.38173974, z: -0.022701332, w: 0.92236143}
+  m_Size:
+    m_Target: 4.5625076
+    speed: 2
+    m_Value: 4.5625076
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_ShowGlobalGrid: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+>>>>>>> ObjectGravity
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,9 +529,15 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a0440000
     m_LastClickedID: 17568
     m_ExpandedIDs: 0000000096270000642c000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 72270000
+    m_LastClickedID: 10098
+    m_ExpandedIDs: 000000007227000000ca9a3bffffff7f
+>>>>>>> ObjectGravity
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,7 +565,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000096270000
+=======
+    m_ExpandedIDs: 000000007227000000ca9a3bffffff7f
+>>>>>>> ObjectGravity
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,10 +594,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: f010feff
     m_LastClickedInstanceID: -126736
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: fe210000d0210000142200001c220000c866dbfff2210000dc210000f223000052220000dcab0000d8ab0000c8c2fcff36ddf9ff74adf8ffce220000e2210000429f00009e230000a2a8f2ff8e3d010066220000f62100004e2200008e250000e0230000d22300009c240000d8230000e2230000e4230000fa2300008024000008240000d025000034270000c44a0100d0280000d2280000189b0000c2450000964400001c300000000000008e440000
+=======
+    m_SelectedInstanceIDs: 7c2e0000
+    m_LastClickedInstanceID: 11900
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: fe210000d0210000142200001c220000c866dbfff2210000dc210000f223000052220000dcab0000d8ab0000c8c2fcff36ddf9ff74adf8ffce220000e2210000429f00009e230000a2a8f2ff8e3d010066220000f62100004e2200008e250000e0230000d22300009c240000d8230000e2230000e4230000fa2300008024000008240000d025000034270000c44a0100d0280000d2280000189b0000c2450000964400001c30000000000000
+>>>>>>> ObjectGravity
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: TNT CRATE
@@ -518,7 +628,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 11}
+=======
+    m_ScrollPosition: {x: 0, y: 276}
+>>>>>>> ObjectGravity
     m_GridSize: 16
   m_DirectoriesAreaWidth: 139
 --- !u!114 &12
@@ -615,10 +729,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 183
-    y: 808
-    width: 1363
-    height: 250
+    x: 210
+    y: 793
+    width: 1423
+    height: 257
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -637,7 +751,11 @@ MonoBehaviour:
     x: 1403
     y: 0
     width: 277
+<<<<<<< HEAD
     height: 876
+=======
+    height: 971
+>>>>>>> ObjectGravity
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -673,7 +791,7 @@ MonoBehaviour:
     width: 275
     height: 855
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 420}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160

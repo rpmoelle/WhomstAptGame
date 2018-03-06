@@ -13,6 +13,7 @@ TagManager:
   - bed
   - paper
   - COMBO
+<<<<<<< HEAD
   - dramatic
   - explosive
   - tasty
@@ -20,6 +21,12 @@ TagManager:
   - funny
   - comedic
   - dirty
+=======
+  - tasty
+  - explosive
+  - dirty
+  - clean
+>>>>>>> ObjectGravity
   layers:
   - Default
   - TransparentFX
