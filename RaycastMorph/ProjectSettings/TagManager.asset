@@ -13,6 +13,13 @@ TagManager:
   - bed
   - paper
   - COMBO
+  - dramatic
+  - explosive
+  - tasty
+  - clean
+  - funny
+  - comedic
+  - dirty
   layers:
   - Default
   - TransparentFX
