@@ -36,7 +36,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        GetComponents<myInfo>(AllObjsWithInfo);
+        for (int i = 0; i < FindObjectsOfType<myInfo>().Length; i++) {
+            AllObjsWithInfo.Add(FindObjectsOfType<myInfo>()[i]);
+        }
         Debug.Log(AllObjsWithInfo[0].gameObject.name);
     }
 
