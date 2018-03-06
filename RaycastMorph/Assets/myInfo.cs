@@ -12,6 +12,7 @@ public class myInfo : MonoBehaviour {
     public bool sallyObject;
     public bool wrongCombine;
     public Vector3 startPos;
+    public Quaternion startRot;
 
     //isabella: make a separate text field (label) that shows after it's been wrongly combined to tell the stats. need new bool too
 
@@ -20,6 +21,7 @@ public class myInfo : MonoBehaviour {
         myLabel = GameObject.Find("ScreenCanvas/ItemLabel").GetComponent<Text>();
         wrongCombine = false;
         startPos = this.gameObject.transform.position;
+        startRot = this.gameObject.transform.rotation;
 	}
 	
 	// Update is called once per frame

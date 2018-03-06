@@ -481,6 +481,7 @@ public class PlayerControlStickyGaze : MonoBehaviour
             
             for (int i = 0; i < AllObjsWithInfo.Count; i++) {
                 AllObjsWithInfo[i].gameObject.transform.position = AllObjsWithInfo[i].startPos;
+                AllObjsWithInfo[i].gameObject.transform.rotation = AllObjsWithInfo[i].startRot;
             }
         }
     }
