@@ -10,13 +10,16 @@ public class myInfo : MonoBehaviour {
      Text myLabel;
     public string label;
     public bool sallyObject;
+    public bool wrongCombine;
+    public Vector3 startPos;
 
-
-    
+    //isabella: make a separate text field (label) that shows after it's been wrongly combined to tell the stats. need new bool too
 
     // Use this for initialization
     void Start () {
         myLabel = GameObject.Find("ScreenCanvas/ItemLabel").GetComponent<Text>();
+        wrongCombine = false;
+        startPos = this.gameObject.transform.position;
 	}
 	
 	// Update is called once per frame

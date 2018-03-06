@@ -161,6 +161,8 @@ MonoBehaviour:
   watched: 0
   label: Clothes Chest
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &651661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -323,6 +325,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &19532787
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +635,8 @@ MonoBehaviour:
   watched: 0
   label: Hot Property
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &25256668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -778,6 +784,8 @@ GameObject:
   - component: {fileID: 41789931}
   - component: {fileID: 41789932}
   - component: {fileID: 41789933}
+  - component: {fileID: 41789934}
+  - component: {fileID: 41789935}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -993,6 +1001,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!54 &41789934
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41789925}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &41789935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41789925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &44916744
 Prefab:
   m_ObjectHideFlags: 0
@@ -1413,6 +1448,8 @@ MonoBehaviour:
   watched: 0
   label: Distraction Window
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &62498313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1767,8 @@ MonoBehaviour:
   watched: 0
   label: Dim Lamp
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &106573699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2888,6 +2927,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &204119938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3837,6 +3878,8 @@ MonoBehaviour:
   watched: 0
   label: Clothes Smoother
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &273899987
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4081,6 +4124,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &300688453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4545,6 +4590,8 @@ MonoBehaviour:
   watched: 0
   label: Books on Chickens
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &340966921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5584,6 +5631,8 @@ MonoBehaviour:
   watched: 0
   label: Clothes Chest
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &386380961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5845,6 +5894,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &397061945
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6021,6 +6072,8 @@ MonoBehaviour:
   watched: 0
   label: Clothes Chest
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &410720583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6160,6 +6213,8 @@ MonoBehaviour:
   watched: 0
   label: Cold Seat
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &421217460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6667,6 +6722,8 @@ MonoBehaviour:
   watched: 0
   label: Master's Degree
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &448198729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,6 +7295,8 @@ MonoBehaviour:
   watched: 0
   label: Work Desk
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &496395696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7327,6 +7386,8 @@ MonoBehaviour:
   watched: 0
   label: Dim Lamp
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &498032064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7493,6 +7554,8 @@ MonoBehaviour:
   watched: 0
   label: Hot Property
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &513194420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7848,6 +7911,8 @@ MonoBehaviour:
   watched: 0
   label: Tiny Waterfall
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &532599960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8988,6 +9053,8 @@ MonoBehaviour:
   watched: 0
   label: Tasty Bread
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &581708837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9183,6 +9250,8 @@ MonoBehaviour:
   watched: 0
   label: Work Desk
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &589886127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9735,6 +9804,8 @@ MonoBehaviour:
   watched: 0
   label: Fiction Books
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &621204559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10161,7 +10232,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -81315988
+  randomSeed: 2096043926
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14051,6 +14122,8 @@ MonoBehaviour:
   watched: 0
   label: Burly Tree
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &700364616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16071,6 +16144,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &895985370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16190,6 +16265,8 @@ MonoBehaviour:
   watched: 0
   label: Big Plate
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &903549040
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16495,6 +16572,8 @@ MonoBehaviour:
   watched: 0
   label: Tiny Waterfall
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &910564545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16946,6 +17025,8 @@ MonoBehaviour:
   watched: 0
   label: Tiny Waterfall
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &959533909
 Prefab:
   m_ObjectHideFlags: 0
@@ -17273,6 +17354,8 @@ MonoBehaviour:
   watched: 0
   label: Hot Property
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &975084378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17870,6 +17953,8 @@ MonoBehaviour:
   watched: 0
   label: Cold Seat
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1039489734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18225,6 +18310,8 @@ MonoBehaviour:
   watched: 0
   label: Sitty Boy
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1083964967
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18356,6 +18443,8 @@ MonoBehaviour:
   watched: 0
   label: Cute Puppy
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1086538558
 GameObject:
   m_ObjectHideFlags: 0
@@ -18544,6 +18633,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1091768397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18782,6 +18873,8 @@ MonoBehaviour:
   watched: 0
   label: Tiny Waterfall
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1098669654
 GameObject:
   m_ObjectHideFlags: 0
@@ -18847,6 +18940,8 @@ MonoBehaviour:
   watched: 0
   label: Coolest Food
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1102261314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18950,6 +19045,8 @@ MonoBehaviour:
   watched: 0
   label: Burly Tree
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1112754381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18996,6 +19093,90 @@ Transform:
   - {fileID: 90558351}
   m_Father: {fileID: 0}
   m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1114964125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1114964129}
+  - component: {fileID: 1114964128}
+  - component: {fileID: 1114964127}
+  - component: {fileID: 1114964126}
+  m_Layer: 0
+  m_Name: ResetPos
+  m_TagString: reset
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1114964126
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114964125}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1114964127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114964125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1114964128
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114964125}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1114964129
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114964125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.116, y: 1.058, z: -2.382}
+  m_LocalScale: {x: 0.869778, y: 2.972983, z: 1.4956883}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118138105
 GameObject:
@@ -19163,6 +19344,8 @@ MonoBehaviour:
   watched: 0
   label: Clothes Chest
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1122486160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19536,6 +19719,8 @@ MonoBehaviour:
   watched: 0
   label: Sally
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!82 &1168458851
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19664,6 +19849,8 @@ MonoBehaviour:
   watched: 0
   label: Papery Paper
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1171517912
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20199,6 +20386,8 @@ MonoBehaviour:
   watched: 0
   label: Bob
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!82 &1229420800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20484,6 +20673,8 @@ MonoBehaviour:
   watched: 0
   label: Burly Tree
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1251167871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21512,6 +21703,8 @@ MonoBehaviour:
   watched: 0
   label: Sharp Scissors
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1339143233
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21580,6 +21773,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1359046287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21930,6 +22125,8 @@ MonoBehaviour:
   watched: 0
   label: Cooking Boy
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1381731098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22062,6 +22259,8 @@ MonoBehaviour:
   watched: 0
   label: Comfy Bed
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1382188267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22260,6 +22459,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1400765017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22616,6 +22817,8 @@ MonoBehaviour:
   watched: 0
   label: Ugly Chair
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1467524878
 GameObject:
   m_ObjectHideFlags: 0
@@ -22650,6 +22853,8 @@ MonoBehaviour:
   watched: 0
   label: Bright Lamp
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1467524880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23510,6 +23715,8 @@ MonoBehaviour:
   watched: 0
   label: Explody Machine
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1538563525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24889,6 +25096,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1667838684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25561,6 +25770,8 @@ MonoBehaviour:
   watched: 0
   label: Cooking Boy
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727454009
 Prefab:
   m_ObjectHideFlags: 0
@@ -25642,6 +25853,8 @@ MonoBehaviour:
   watched: 0
   label: Zooming Chair
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1727454012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25942,6 +26155,8 @@ MonoBehaviour:
   watched: 0
   label: Bright Lamp
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1747237089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26035,6 +26250,8 @@ MonoBehaviour:
   watched: 0
   label: Dim Lamp
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1747251169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26317,6 +26534,8 @@ MonoBehaviour:
   watched: 0
   label: Sitty Chair
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1750327275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27045,6 +27264,8 @@ MonoBehaviour:
   watched: 0
   label: Ugly Chair
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1779537056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29414,6 +29635,8 @@ MonoBehaviour:
   watched: 0
   label: Fire Box
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1926226111
 Prefab:
   m_ObjectHideFlags: 0
@@ -29773,6 +29996,8 @@ MonoBehaviour:
   watched: 0
   label: Bunununu
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1958816666
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30379,6 +30604,8 @@ MonoBehaviour:
   watched: 0
   label: Coolest Food
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &2023891362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30541,6 +30768,8 @@ MonoBehaviour:
   watched: 0
   label: Picture Window
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &2037190278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30750,6 +30979,8 @@ MonoBehaviour:
   watched: 0
   label: Old Dingle-bell
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &2043912176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30811,6 +31042,8 @@ MonoBehaviour:
   watched: 0
   label: Hot Property
   sallyObject: 1
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!65 &2048873564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31173,6 +31406,8 @@ MonoBehaviour:
   watched: 0
   label: MessyBed
   sallyObject: 0
+  wrongCombine: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!54 &2074507934
 Rigidbody:
   m_ObjectHideFlags: 0

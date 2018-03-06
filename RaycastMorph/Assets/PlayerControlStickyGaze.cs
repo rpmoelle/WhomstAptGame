@@ -111,13 +111,20 @@ public class PlayerControlStickyGaze : MonoBehaviour
                     }
                 }
                
+                //isabella: UI LABEL STUFF
                 if (hit.collider.gameObject.GetComponent<myInfo>() != null)
                 {
                     hit.collider.gameObject.GetComponent<myInfo>().watched = true;
                     if (hit.collider.gameObject.GetComponent<myInfo>().label != null)
                     {
                         Debug.Log("WOOO");
-                        WorldLabel.enabled = true;
+                        //WorldLabel.enabled = true;
+                        if (hit.collider.gameObject.GetComponent<myInfo>().wrongCombine) {
+                            WorldLabel.enabled = true;
+                        }
+                        else {
+                            WorldLabel.enabled = false;
+                        }
                         WorldLabel.text = hit.collider.gameObject.GetComponent<myInfo>().label;
                     }
                 }
@@ -230,9 +237,11 @@ public class PlayerControlStickyGaze : MonoBehaviour
                                 //MyObjects.Add(TEMPNEWOBJ);
 
                             }
+                            //isabella: DIDN'T WORK - SHOW THE ADJECTIVES NAO (all the else statements in this switch)
                             else
                             {
                                 Debug.Log("COMBO DIDN'T WORK");
+                                MyObjects[0].GetComponent<myInfo>().wrongCombine = true;
                                 this.gameObject.GetComponent<AudioSource>().Play();
                             }
                             //detachItems();
@@ -269,8 +278,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
                             else
                             {
                                 Debug.Log("COMBO DIDN'T WORK");
+                                MyObjects[0].GetComponent<myInfo>().wrongCombine = true;
                                 this.gameObject.GetComponent<AudioSource>().Play();
-                        }
+                            }
                            // detachItems();
                           //  cam.transform.DetachChildren();
                           //  MyObjects.Clear();
@@ -305,8 +315,9 @@ public class PlayerControlStickyGaze : MonoBehaviour
                             else
                             {
                                 Debug.Log("COMBO DIDN'T WORK");
-                            this.gameObject.GetComponent<AudioSource>().Play();
-                        }
+                                MyObjects[0].GetComponent<myInfo>().wrongCombine = true;
+                                this.gameObject.GetComponent<AudioSource>().Play();
+                            }
                             //detachItems();
                            // cam.transform.DetachChildren();
                             //MyObjects.Clear();
@@ -458,6 +469,21 @@ public class PlayerControlStickyGaze : MonoBehaviour
             }
             //Vector3 force = 7f * Time.deltaTime * transform.forward;
             //i.AddForce(force);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.tag == "reset") {
+            Debug.Log("this worked");
+            List<myInfo> AllObjs = new List<myInfo>();
+            for (int i = 0; i < FindObjectsOfType<myInfo>().Length; i++) {
+                AllObjs[i] = FindObjectsOfType<myInfo>()[i];
+            }
+            
+            for (int i = 0; i < AllObjs.Count; i++) {
+                //MyObjects[i].GetComponent<Transform>().position = MyObjects[i].GetComponent<myInfo>().startPos;
+                AllObjs[i].gameObject.GetComponent<Transform>().position = AllObjs[i].startPos;
+            }
         }
     }
 }
